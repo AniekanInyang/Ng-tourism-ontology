@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1548530759260" name="http://cohse.semanticweb.org/ontologies/people" uri="PROJECT%20MATERIALS/building/owl/Code%20examples/people+pets.owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1548530759260" name="duplicate:http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism" uri="NigerianTourism.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548530759260" name="duplicate:http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism" uri="nigeriatourismrdf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548530759260" name="duplicate:http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism" uri="ntourism.owl"/>
+    </group>
+</catalog>

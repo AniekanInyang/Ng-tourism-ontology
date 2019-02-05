@@ -1,0 +1,2386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#"
+     xml:base="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#isContainedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasFacility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+        <rdfs:label xml:lang="en">hasFacility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasFood">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price"/>
+        <rdfs:label xml:lang="en">hasPrice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasRate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasRate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating"/>
+        <rdfs:label xml:lang="en">hasRating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasScenery -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasScenery">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Scenery"/>
+        <rdfs:label xml:lang="en">hasScenery</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasSecurity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasSecurity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Security"/>
+        <rdfs:label xml:lang="en">hasSecurity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasTraffic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasTraffic">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic"/>
+        <rdfs:label xml:lang="en">hasTraffic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#isContainedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <rdfs:label xml:lang="en">isContainedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <rdfs:label xml:lang="en">isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasClimate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasClimate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasWeather -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasWeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasClimate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Beach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ"/>
+        <rdfs:label xml:lang="en">Beach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty">
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features">
+        <rdfs:label xml:lang="en">Features</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food">
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hills_And_Rocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hills_And_Rocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ"/>
+        <rdfs:label xml:lang="en">Hills and Rocks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:label xml:lang="en">Historic Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasFacility"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#hasRate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:label xml:lang="en">Mall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+        <rdfs:label xml:lang="en">Natural Environ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b">
+        <rdfs:label xml:lang="en">Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features"/>
+        <rdfs:label xml:lang="en">Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features"/>
+        <rdfs:label xml:lang="en">Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region">
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ"/>
+        <rdfs:label xml:lang="en">Resort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#OWLClassImpl_a19e976b_013f_4569_abc3_2bc20b54c48b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Scenery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Scenery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features"/>
+        <rdfs:label xml:lang="en">Scenery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Features"/>
+        <rdfs:label xml:lang="en">Security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State">
+        <rdfs:label xml:lang="en">State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic">
+        <rdfs:label xml:lang="en">Traffic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#WaterFall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#WaterFall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ"/>
+        <rdfs:label xml:lang="en">WaterFall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zoo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zoo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Natural_Environ"/>
+        <rdfs:label xml:lang="en">Zoo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Abanyom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Abanyom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Abia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Abia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Abia</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Adamawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Adamawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Adamawa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Adim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Adim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Afo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Afo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edikang_Ikong"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekpang_Nkwukwo"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fufu_and_Afang"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Pounded_Yam_and_Afia_Efere"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Akwa Ibom</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Alara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Alara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Nok by Alara</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Amala_and_Ewedu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Amala_and_Ewedu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anambra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anambra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Anambra</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Andoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Andoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Aso_Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Aso_Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hills_And_Rocks"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Aso Rock</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasWeather>Hot</hasWeather>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Asun_Goat_Meat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Asun_Goat_Meat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Awori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Awori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ayoyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ayoyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#BON_Hotel_Stratton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#BON_Hotel_Stratton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Formerly Protea Hotel, Asokoro</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Beach"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Bar Beach Lagos</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bassa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bassa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bauchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bauchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Bauchi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bayelsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bayelsa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Bayelsa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Becheve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Becheve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Belegete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Belegete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bendi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bendi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Benue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Benue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Benue</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Boli_and_Groundnut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Boli_and_Groundnut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Borno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Borno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Borno</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Scenery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ceddi_Plaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ceddi_Plaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ceddi Plaza</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Chad_Basin_National_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Chad_Basin_National_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>The Chad Basin National Park</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Cross_River -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Cross_River">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edikang_Ikong"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekpang_Nkwukwo"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fufu_and_Afang"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Cross River</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dabino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dabino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dabun_Tsaki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dabun_Tsaki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dambu_Nama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Dambu_Nama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Danwake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Danwake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Davok_Suites -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Davok_Suites">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Davok Hotel and Suites, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#De_Castle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#De_Castle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>De Castle Luxury Home, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Delta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Delta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Delta</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ebonyi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ebonyi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ebonyi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edikang_Ikong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edikang_Ikong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Edo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Efik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Efik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Egun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Egun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ejagham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ejagham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekiti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekiti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ekiti</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eko_Gym_and_Spa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eko_Gym_and_Spa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Spa"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Eko Gym and Spa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eko_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eko_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Eko Hotel and Suites, Victoria Island</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekpang_Nkwukwo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekpang_Nkwukwo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Enugu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Enugu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Enugu</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ewa_Aganyin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ewa_Aganyin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Abuja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Federal_Palace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Federal_Palace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Federal Palace Hotel, Victoria Island</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fufu_and_Afang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fufu_and_Afang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gbegiri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gbegiri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Georgetown_Residences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Georgetown_Residences">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Georgetown Residences, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gombe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gombe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Gombe</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gwari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gwari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#HardRock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#HardRock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>HardRock Cafe</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hatfield_Apartments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hatfield_Apartments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#3_Star_and_Below"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Hatfield Apartments, Jabi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#IMAX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#IMAX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Filmhouse IMAX</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Beach"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eket"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ibeno Beach, Ibeno</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasWeather>Rainy</hasWeather>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibom_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibom_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anang"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eket"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibeno"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Okobo"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oro"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ibom Unity Museum and State Park, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ijebu_Garri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ijebu_Garri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikeja_City_Mall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikeja_City_Mall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ikeja City Mall (ICM)</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikokore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikokore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikorn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikorn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Imo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Imo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Imo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Inagbe_Grand_Resorts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Inagbe_Grand_Resorts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Inagbe Grand Resorts and Leisure, Apapa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jabi_Lake_Mall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jabi_Lake_Mall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Jabi Lake Mall, Jabi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jhalobia_Recreation_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jhalobia_Recreation_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Jhalobia Recreation Parks and Gardens</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jigawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jigawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Jigawa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kaduna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kaduna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kaduna</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kano</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Katsina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Katsina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Katsina</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kebbi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kebbi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kebbi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kilishi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kilishi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kogi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kogi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kogi</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kuka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kuka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kuli_Kuli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kuli_Kuli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kunu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kunu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kwa_Falls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kwa_Falls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#WaterFall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ejagham"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Cross_River"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kwa Falls, Akamkpa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kwara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kwara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Kwara</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#La_Campagne_Tropicana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#La_Campagne_Tropicana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>La Campagne Tropicana, Lekki</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Amala_and_Ewedu"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Asun_Goat_Meat"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gbegiri"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ijebu_Garri"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ikokore"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ofada_Rice"/>
+        <hasFood rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Semovita_and_Efo_Riro"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Lagos</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos_Continental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos_Continental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Intercontinental Lagos Hotel, Victoria Island</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Le_Mango -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Le_Mango">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Le Mango Bar and Restaurant</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Le_Meridien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Le_Meridien">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Spa"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Le Meridien Ibom Golf Resort, Uruan</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lekki_Conservation_Centre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lekki_Conservation_Centre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Lekki Conservation Centre (LCC), Lekki</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Masa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Masa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Millenium_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Millenium_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Millenium Park Abuja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Millenium_Tower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Millenium_Tower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Millenium Tower</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nasarawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nasarawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Nasarawa</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#National_Children_Park_and_Zoo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#National_Children_Park_and_Zoo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zoo"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>National Children&apos;s Park and Zoo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#National_Gallery_of_Art -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#National_Gallery_of_Art">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>National Gallery of Art, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Niger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Niger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Niger</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nigerian_National_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nigerian_National_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Nigerian National Museum</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nike_Art_Gallery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nike_Art_Gallery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Nike Art Gallery Museum</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nkoyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nkoyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Nkoyo, Ceddi Plaza</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Traffic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Benue"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kogi"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kwara"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Nasarawa"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Niger"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Plateau"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>North_Central</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Highland Climate</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Adamawa"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bauchi"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Borno"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gombe"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Taraba"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yobe"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>North East</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Tropical Dry Climate</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Jigawa"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kaduna"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kano"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Katsina"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Kebbi"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sokoto"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zamfara"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>North West</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Tropical Dry Climate</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obanlikwu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obanlikwu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obudu_Cattle_Ranch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obudu_Cattle_Ranch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Becheve"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Belegete"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bendi"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Efik"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obanlikwu"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Utanga"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Cross_River"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Obudu Mountain Resort and Ranch</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasWeather>Cold</hasWeather>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obudu_Grill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Obudu_Grill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>The Obudu Grill House</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ofada_Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ofada_Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ogun</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Okobo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Okobo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ondo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ondo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Ondo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oriental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oriental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Oriental Hotel, Victoria Island</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Osun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Osun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Osun</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Oyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Plateau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Plateau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_Central"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Plateau</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Pounded_Yam_and_Afia_Efere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Pounded_Yam_and_Afia_Efere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Protea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Protea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#3_Star_and_Below"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Protea Hotel, Ikeja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#RSVP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#RSVP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>R.S.V.P Lagos</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Radisson_Blue_Anchorage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Radisson_Blue_Anchorage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Radisson Blue Anchorage Hotel, Victoria Island</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Radisson_Blue_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Radisson_Blue_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Formerly Renaissance Hotel, Ikeja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rafia_City_Plaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rafia_City_Plaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anang"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Rafia City Plaza, Ikot Ekpene</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rivers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rivers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Rivers</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Semovita_and_Efo_Riro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Semovita_and_Efo_Riro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Scenery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sheration_Abuja_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sheration_Abuja_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Sheraton Abuja Hotel, Maitama</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sheraton_Lagos_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sheraton_Lagos_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Sheraton Lagos Hotel</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Shiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Shiro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Shiro Lagos</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Silver_Lounge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Silver_Lounge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Silver Lounge and Bar, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Silverbird_Galleria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Silverbird_Galleria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Heavy_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Silverbird Galleria, Lagos</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sofa_Lounge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sofa_Lounge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Restaurant"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Sofa Lounge</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sokoto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Sokoto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Sokoto</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_East">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Abia"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Anambra"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ebonyi"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Enugu"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Imo"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>South East</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Tropical Moonsoon Climate</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_South">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bayelsa"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Cross_River"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Delta"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Edo"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rivers"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>South South</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Tropical Rainforest</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#South_West">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Region"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ekiti"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogun"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ondo"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Osun"/>
+        <contains rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Oyo"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>South West</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+        <hasClimate>Tropical Savannah</hasClimate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Southern_Sun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Southern_Sun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Southern Sun Ikoyi Hotel</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Spa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Spa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Suya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Suya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Facilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Taraba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Taraba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Taraba</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Terra_Kulture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Terra_Kulture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Historic_Site"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Terra Kulture</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Transcorp_Hilton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Transcorp_Hilton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Transcorp Hilton Abuja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Transcorp_Hilton_Abuja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Transcorp_Hilton_Abuja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Premium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Transcorp Hilton, Abuja</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tropicana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tropicana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Mall"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ibibio"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Silverbird Ibom Tropicana Entertainment Center, Uyo</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tuashe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tuashe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tuwo_Sinkafa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Tuwo_Sinkafa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Utanga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Utanga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Villa_Marina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Villa_Marina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hotel"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Eket"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasRate rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#3_Star_and_Below"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Busy"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Akwa_Ibom"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Villa Marina Hotel, Eket</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Whispering_Palms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Whispering_Palms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Bar"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Gymn"/>
+        <hasFacility rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Swimming_Pool"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Ogu"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Medium_Price"/>
+        <hasScenery rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Serene"/>
+        <hasSecurity rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Security"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#No_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Lagos"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Whispering Palms Resort, Badagry</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Wonderland_Amusement_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Wonderland_Amusement_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Resort"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Fulani"/>
+        <hasLanguage rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Hausa"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#High_Price"/>
+        <hasTraffic rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Low_Traffic"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#FCT"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Wonderland Amusement Park and Resort</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yobe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yobe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_East"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Yobe</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Yoruba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zamfara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zamfara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#State"/>
+        <isContainedIn rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#North_West"/>
+        <OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>Zamfara</OWLDataProperty_e40f81b7_c8da_41b0_b7d3_3fa649a92287>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zogae_Kwodo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Zogae_Kwodo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#3_Star_and_Below -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#3_Star_and_Below">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#4_Star">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#5_Star">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gray/ontologies/2018/4/nigerian-tourism#Rating"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
